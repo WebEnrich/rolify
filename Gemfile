@@ -7,7 +7,7 @@ group :test do
     gem "sqlite3", :platform => "ruby"
     gem "activerecord", ">= 3.2.0", :require => "active_record"
   when "mongoid"
-    gem "mongoid", ">= 5.0.0.rc0"
+    gem "mongoid", ">= 5"
     gem "bson_ext", :platform => "ruby"
   else
     raise "Unknown model adapter: #{ENV["ADAPTER"]}"
